@@ -6,6 +6,8 @@ High-performance systems are evolving to a point where performance is no longer 
 </p>
 
 ## Links
-Open Access M.S. Thesis: [An Experimental Exploration of Self-aware Systems for Exascale Architectures](https://udspace.udel.edu/handle/19716/20389)
+* Open Access M.S. Thesis
+  * UDSpace: [An Experimental Exploration of Self-aware Systems for Exascale Architectures](https://udspace.udel.edu/handle/19716/20389)
 
-Position Paper: [Toward a Self-aware System for Exascale Architectures](https://link.springer.com/chapter/10.1007/978-3-642-54420-0_79)
+## Related Publications
+* [Toward a Self-aware System for Exascale Architectures](https://link.springer.com/chapter/10.1007/978-3-642-54420-0_79)
