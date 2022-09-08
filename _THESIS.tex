@@ -1,0 +1,94 @@
+\documentclass{udthesis}
+
+\usepackage[english]{babel}
+%\usepackage{float}
+%\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{bookmark}
+
+\makeatletter
+\providecommand{\toclevel@prefacesection}{0}
+\makeatother 
+
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+\tcbuselibrary{skins}
+
+\pdfoptionpdfminorversion=7
+
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+\definecolor{myblue}{RGB}{72,107,123}
+\definecolor{myblue2}{RGB}{184,206,216}
+
+\tcbset{borderline={0.5mm}{0.0mm}{myblue},sharp corners,width=10cm,enhanced,boxrule=0.5pt,fonttitle=\normalsize,
+colback=gray!01!white,colframe=myblue,colbacktitle=myblue2,
+coltitle=black,center title,shrink tight}
+
+%\usepackage{draftwatermark}
+%\SetWatermarkScale{8}
+%\SetWatermarkLightness{0.96}
+
+\begin{document}
+    %FIXME: FIX NUMBERING of pages to romane numerals, Get required pages (see Josh's thesis), add Acknowledgment.
+    \title[An Experimental Exploration of Self-aware Systems for Exascale Architectures]{An Experimental Exploration of Self-aware Systems for Exascale Architectures}
+                   % This file (thesis-tap.tex) contains the Title
+                   % and Approval Page information for a master's thesis.
+
+    \author{Aaron Myles Landwehr}
+    \type{thesis}
+    \degree{Master of Science in Electrical and Computer Engineering}
+    \majorfieldtrue\majorfield{Electrical \& Computer Engineering}
+    \degreedate{Summer 2016}
+    \keywords{self-awareness, self-adaptation, exascale architectures}
+    \subject{Subject}
+
+    \maketitlepage
+
+    \begin{approvalpage}
+    \prof{Guang R. Gao, Ph.D.}
+    \chair{Kenneth E. Barner, Ph.D.}{Chair of the Department of Electrical \& Computer Engineering}
+    \dean{Babatunde A. Ogunnaike, Ph.D.}{Dean of the College of Engineering}
+    \end{approvalpage}
+
+    \begin{front} % Starts front material (Roman style page numbers)
+        \prefacesection{Acknowledgments}
+            \input{Text/acknowledgments}
+
+        \tablespagefalse 
+        \maketocloflot
+        \prefacesectiontoc{Abstract}
+            \input{Text/abstract}
+    \end{front}
+
+    \pagenumbering{arabic}
+
+    \chapter{Introduction}
+        \input{Text/introduction}
+    \chapter{Background}
+        \input{Text/background}
+    \chapter{Problem Formulation}
+        \input{Text/problem_formulation}
+    \chapter{Requirements for self-adaptation}
+        \input{Text/requirements}
+    \chapter{Simulation Framework}
+        \input{Text/Framework}
+    \chapter{Experimental Evaluation}
+        \input{Text/results}
+    \chapter{Related Work}
+        \input{Text/related_work}
+    \chapter{Conclusion}
+        \input{Text/conclusion}
+
+    %\section*{Acknowledgment}
+    %    This material is based upon work supported by the Department of Energy [Office of Science] under Award Number DE-SC0008717.
+    
+    %\section*{Disclaimer}    
+    %    This report was prepared as an account of work sponsored by an agency of the United States Government. Neither the United States Government nor any agency thereof, nor any of their employees, makes any warranty, express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights. Reference herein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United States Government or any agency thereof. The views and opinions of authors expressed herein do not necessaril state or reflect those of the United States Government or any agency thereof.
+
+   \bibliographystyle{abbrv}
+   \bibliography{Bib/biblio}
+
+\end{document}
