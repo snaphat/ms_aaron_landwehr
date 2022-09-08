@@ -11,5 +11,6 @@ High-performance systems are evolving to a point where performance is no longer 
   * ProQuest: [An Experimental Exploration of Self-aware Systems for Exascale Architectures](https://www.proquest.com/openview/b134a41b4dd5fe155e9229b494005b9e/1.pdf?pq-origsite=gscholar&cbl=18750)
 
 ## Related Work
+* [Toward a Self-Aware Codelet Execution Model](https://ieeexplore.ieee.org/document/7089026)
 * [Toward a Self-aware System for Exascale Architectures](https://link.springer.com/chapter/10.1007/978-3-642-54420-0_79)
 * [Self-Aware FramEwork (SAFE)](https://www.snaphat.com/software/self-aware-framework)
